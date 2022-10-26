@@ -1,1 +1,64 @@
-Hello from Zvonigrad
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Zvonigrad</title>
+    <link rel="icon" href="img/favicon.png" type="image/x-icon">
+    <style>
+        body {
+            background: #5a1400;
+            margin: 0rem;
+            min-height: 100vh;
+            font-family: Futura, sans-serif;
+        }
+        #canvas, #text {
+            position: absolute;
+            display: block;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        #text {
+            min-height: 100vh;
+            width: 100vw;
+            z-index: 1;
+            color: rgba(255, 255, 255, 0.5);
+            text-transform: uppercase;
+            font-size: 5vmin;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        #text h1 {
+            opacity: 0.9;
+            color: rgb(70, 125, 230);
+            background: -webkit-linear-gradient(rgb(70, 125, 230), #38495a);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        .prevent-select {
+            -webkit-user-select: none; /* Safari */
+            -ms-user-select: none; /* IE 10 and IE 11 */
+            user-select: none; /* Standard syntax */
+        }
+        .logo {
+            max-width: 300px;
+            max-height: 300px;
+        }
+    </style>
+  </head>
+  <body>
+    <main>
+        <canvas id="canvas"></canvas>
+        <div class="" id="text">
+            <a href="#"><img class="logo" src="img/udruga-zvonigrad.png"></a>
+        </div>
+    </main>
+  </body>
+
+  <script>
+       
+  </script> 
+
+</html>
